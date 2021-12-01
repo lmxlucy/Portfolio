@@ -6,6 +6,7 @@
     <link href="Assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
 </head>
@@ -15,7 +16,7 @@
     <div class="navbar-fixed">
         <nav class="z-depth-0">
             <div class="nav-wrapper">
-                <a href="Assets/others/resume.pdf" target="_blank" class="brand-logo center">
+                <a href="" class="brand-logo center">
                     <img src="Assets/images/signature.png" alt="Meixuan Li">
                 </a>
 
@@ -24,6 +25,7 @@
                     <li><a href="#my-intro">About</a></li>
                     <li><a href="#my-work">Work</a></li>
                     <li><a href="#my-journey">Journey</a></li>
+                    <li><a href="Assets/others/resume.pdf" target="blank">Resume</a></li>
                 </ul>
             </div>
         </nav>
@@ -35,7 +37,7 @@
             <div class="hero">
                 <img src="Assets/images/intro.jpg" alt="intro">
                 <div class="heading">
-                    <h1>Meixuan (Lucy) Li</h1>
+                    <span class="title">Meixuan (Lucy) Li</span>
                     <h4>Software Developer | User Researcher | Designer</h4>
                 </div>
             </div>
@@ -54,7 +56,7 @@
         <!-- Reference: https://codepen.io/jeffglenn/pen/KNYoKa -->
         <section id="work">
 
-            <div class="work-piece from_right">
+            <div class="work-piece from_right" id="funfact">
 
                 <div class="work-bg" style="background-image: url(Assets/images/FunFact.png)"></div>
 
@@ -68,7 +70,7 @@
 
             </div>
 
-            <div class="work-piece from_left">
+            <div class="work-piece from_left" id="mission_control">
 
                 <div class="work-bg" style="background-image: url(Assets/images/Daimler.png)"></div>
 
@@ -83,7 +85,7 @@
 
             </div>
 
-            <div class="work-piece from_right">
+            <div class="work-piece from_right" id="magazine">
 
                 <div class="work-bg" style="background-image: url(Assets/images/Magazine.png)"></div>
 
@@ -98,7 +100,7 @@
 
             </div>
 
-            <div class="work-piece from_left">
+            <div class="work-piece from_left" id="sparktalk">
 
                 <div class="work-bg" style="background-image: url(Assets/images/SparkTalk.png)"></div>
 
@@ -250,7 +252,7 @@
     </div>
 
     <!-- custom js -->
-    <script src="Assets/js/animation.js"></script>
+    <script src="Assets/js/custom.js"></script>
 </body>
 
 </html>
