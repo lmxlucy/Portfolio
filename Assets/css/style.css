@@ -460,8 +460,10 @@
     }
     
     .flex-text {
-        margin: 20px;
-        margin-top: 0;
+        margin-right: 20px;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
     }
     
     .flex-text p {
