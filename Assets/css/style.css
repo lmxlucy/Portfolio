@@ -10,20 +10,29 @@
     }
     
     p {
-        font-size: max(1.5vh, 1vw, 100%);
+        font-size: min(3vh, 2vw);
     }
     
     h1 {
-        font-size: max(3vh, 2vw, 200%);
+        font-size: min(5vh, 2vw);
+    }
+    
+    h2 {
+        font-size: min(4vh, 2vw);
     }
     
     nav a {
-        font-size: 30px !important;
+        font-size: 20px !important;
     }
     
     .title {
         font-weight: bolder;
         font-size: max(4vh, 4vw);
+    }
+    
+    .description {
+        font-weight: bolder;
+        font-size: max(2vh, 2vw);
     }
     
     .hero-wrapper {
@@ -60,8 +69,7 @@
     .heading {
         position: absolute;
         top: 70%;
-        left: 10%;
-        font-size: 120px;
+        left: 15%;
         transform: translate(-20%, -70%);
         z-index: 2;
     }
@@ -130,8 +138,8 @@
     }
     
     #my-intro {
-        height: 100%;
         background-color: black;
+        height: 85vh;
     }
     /* Reference: https://codepen.io/jeffglenn/pen/KNYoKa */
     
@@ -215,6 +223,10 @@
         opacity: 0;
     }
     
+    .work-description p {
+        font-size: large;
+    }
+    
     .work-title {
         position: absolute;
         top: 50%;
@@ -223,7 +235,7 @@
         z-index: 1;
         border-top: 1px solid #fff;
         border-bottom: 1px solid #fff;
-        font-size: max(2vh, 1vw, 150%);
+        font-size: max(2vh, 1.5vw);
         font-weight: bold;
         text-align: center;
     }
@@ -244,8 +256,6 @@
     
     #timeline {
         position: relative;
-        width: 60%;
-        margin: auto;
     }
     
     .timeline_progressbar {
@@ -385,4 +395,87 @@
         background: -o-linear-gradient(transparent, #0b0b0b);
         background: linear-gradient(transparent, #0b0b0b);
         pointer-events: none;
+    }
+    /* work page */
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+    
+    .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+    
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+    
+    @media screen and (max-width: 800px) {
+        .column {
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+    
+    .overlay_text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 44%;
+        margin: 0;
+        padding: 5px 0 5px 30px;
+        transform: translate(-50%, -50%);
+        background-color: #000000c9;
+    }
+    
+    .parallax img {
+        width: 100%;
+    }
+    
+    .content-width {
+        width: 60%;
+        margin: auto;
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .flex-container img {
+        width: 100%;
+    }
+    
+    .flex-text {
+        margin: 20px;
+        margin-top: 0;
+    }
+    
+    .flex-text p {
+        margin: 0;
+    }
+    /* Responsive layout - makes a one column layout instead of a two-column layout */
+    
+    @media (max-width: 800px) {
+        .flex-container {
+            flex-direction: column;
+        }
+    }
+    
+    .video {
+        width: 100%;
+        height: 100%;
     }
