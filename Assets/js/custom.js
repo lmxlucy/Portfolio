@@ -31,10 +31,6 @@ ScrollReveal().reveal('.timeline_block_title', { distance: '50px', origin: 'left
 ScrollReveal().reveal('.timeline_block_body', { distance: '100px', origin: 'right' });
 
 // link to individual work page
-$('#magazine').click(function() {
-    window.open('https://medium.com/@meixuanl/project-5-83eca14354bc')
-});
-
 $('#mission_control').click(function() {
     window.open('work_template.html', '_self', false)
 });
