@@ -32,5 +32,5 @@ ScrollReveal().reveal('.timeline_block_body', { distance: '100px', origin: 'righ
 
 // link to individual work page
 $('#mission_control').click(function() {
-    window.open('work_template.html', '_self', false)
+    window.open('mission_control.html', '_self', false)
 });
