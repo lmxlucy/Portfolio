@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 // scroll animation
 ScrollReveal({
-    reset: true,
+    reset: false,
     distance: '100px',
     duration: 1000,
     delay: 100,

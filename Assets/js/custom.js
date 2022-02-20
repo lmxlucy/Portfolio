@@ -31,6 +31,6 @@ ScrollReveal().reveal('.timeline_block_title', { distance: '50px', origin: 'left
 ScrollReveal().reveal('.timeline_block_body', { distance: '100px', origin: 'right' });
 
 // link to individual work page
-$('#mission_control').click(function() {
-    window.open('mission_control.html', '_self', false)
+$('#sparktalk').click(function() {
+    window.open('user_research.html', '_self', false)
 });
