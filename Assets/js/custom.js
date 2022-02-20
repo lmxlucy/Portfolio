@@ -7,7 +7,7 @@ tl.fromTo(hero, 1, { height: "0%" }, { height: "80%", ease: Power2.easeInOut })
 
 // scroll animation
 ScrollReveal({
-    reset: true,
+    reset: false,
     distance: '30px',
     duration: 1000,
     delay: 10,
