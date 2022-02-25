@@ -34,3 +34,38 @@ ScrollReveal().reveal('.timeline_block_body', { distance: '100px', origin: 'righ
 $('#sparktalk').click(function() {
     window.open('user_research.html', '_self', false)
 });
+
+$('#funfactor').click(function() {
+    window.open('ios_app.html', '_self', false)
+});
+
+// image fullscreen on click
+// reference: https://stackoverflow.com/a/50430187
+$('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
+    var src = $(this).attr('src');
+    var modal;
+
+    function removeModal() {
+        modal.remove();
+        $('body').off('keyup.modal-close');
+    }
+    modal = $('<div>').css({
+        background: 'RGBA(0,0,0,.5) url(' + src + ') no-repeat center',
+        backgroundSize: 'contain',
+        width: '100%',
+        height: '100%',
+        position: 'fixed',
+        zIndex: '10000',
+        top: '0',
+        left: '0',
+        cursor: 'zoom-out'
+    }).click(function() {
+        removeModal();
+    }).appendTo('body');
+    //handling ESC
+    $('body').on('keyup.modal-close', function(e) {
+        if (e.key === 'Escape') {
+            removeModal();
+        }
+    });
+});

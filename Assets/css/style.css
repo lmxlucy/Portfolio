@@ -21,6 +21,10 @@
         font-size: min(4vh, 2vw);
     }
     
+    img {
+        width: 100%;
+    }
+    
     nav a {
         font-size: 20px !important;
     }
@@ -339,9 +343,8 @@
         grid-column: 2 / -1;
     }
     
-    .timeline_block_card img {
-        width: 100%;
-        height: auto;
+    .timeline_block_text a {
+        color: #fff;
     }
     
     @media screen and (min-width: 800px) {
@@ -413,7 +416,6 @@
     .column img {
         margin-top: 8px;
         vertical-align: middle;
-        width: 100%;
     }
     
     @media screen and (max-width: 800px) {
@@ -441,10 +443,6 @@
         background-color: #000000c9;
     }
     
-    .parallax img {
-        width: 100%;
-    }
-    
     .content-width {
         width: 60%;
         margin: auto;
@@ -453,10 +451,6 @@
     .flex-container {
         display: flex;
         flex-direction: row;
-    }
-    
-    .flex-container img {
-        width: 100%;
     }
     
     .flex-text {
@@ -475,9 +469,4 @@
         .flex-container {
             flex-direction: column;
         }
-    }
-    
-    .video {
-        width: 100%;
-        height: 100%;
     }
