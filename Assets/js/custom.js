@@ -43,6 +43,10 @@ $('#mi').click(function() {
     window.open('mi.html', '_self', false)
 });
 
+$('#mission_control').click(function() {
+    window.open('mission_control.html', '_self', false)
+});
+
 // image fullscreen on click
 // reference: https://stackoverflow.com/a/50430187
 $('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
